@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <SessionContext.Provider value={{ session, setSession}}>
+      <SessionContext.Provider value={{ session, setSession }}>
         {/* Not Authorized */}
         {!session.user && <GoogleLogin />}
 
